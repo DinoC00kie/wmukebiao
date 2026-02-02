@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, send_file, jsonify
+from flask_cors import CORS
 import io
 import os
 from generate_ics import process_zip_files
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max limit
 
 @app.route('/')
