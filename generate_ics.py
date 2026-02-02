@@ -111,7 +111,7 @@ def process_zip_files(zip_files):
     Returns the ICS content as bytes.
     """
     cal = Calendar()
-    cal.add('prodid', '-//Course Schedule//pkx07.github.io//CN')
+    cal.add('prodid', '-//Course Schedule//github.com/pkx07/wmukebiao//CN')
     cal.add('version', '2.0')
     
     total_events = 0
